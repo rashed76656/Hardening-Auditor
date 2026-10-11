@@ -55,7 +55,7 @@ Grades: A >= 90, B >= 80, C >= 70, D >= 60, F below 60.
 2. Apply a few fixes: enable `ufw`, set `PermitRootLogin no`, install `fail2ban` and `unattended-upgrades`.
 3. Run it again and show the score going up (compare the two HTML reports).
 
-## How it works (for the viva)
+## How it works
 
 - Everything is plain Bash plus standard tools (`awk`, `grep`, `find`, `stat`, `ss`, `systemctl`).
 - `record()` is the core function: every check calls it with a status, weight, title, detail and fix. It prints the result and stores it for the summary and the HTML report.
